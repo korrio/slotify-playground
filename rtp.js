@@ -3,11 +3,11 @@ import {ReelGameSession, ReelGameSessionConfig, ReelGameSessionReelsController, 
 const sessionConfig = new ReelGameSessionConfig();
 sessionConfig.creditsAmount = Infinity;
 sessionConfig.reelsItemsSequences = [
-    ['J', '9', 'Q', '10', 'A', 'S', 'K'],
-    ['K', 'S', '10', 'A', '9', 'Q', 'J'],
-    ['J', 'Q', '10', '9', 'S', 'A', 'K'],
-    ['Q', '10', '9', 'S', 'K', 'A', 'J'],
-    ['Q', 'A', 'J', '10', '9', 'S', 'K']
+    ['J', 'Q', '10', '9', 'A'],
+    ['J', 'Q', '10', '9', 'S'],
+    ['J', 'Q', '10', '9', 'S'],
+    ['J', 'Q', '10', '9', 'S'],
+    ['J', 'Q', '10', '9', 'S']
 ];
 const reelsController = new ReelGameSessionReelsController(sessionConfig);
 const winningCalculator = new ReelGameSessionWinCalculator(sessionConfig);
